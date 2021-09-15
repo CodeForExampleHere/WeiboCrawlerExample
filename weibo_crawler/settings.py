@@ -58,8 +58,6 @@ DEFAULT_REQUEST_HEADERS = {
 DOWNLOADER_MIDDLEWARES = {
    # 'weibo_crawler.middlewares.WeiboCrawlerDownloaderMiddleware': 543
    # 'weibo_crawler.middlewares.FakeWeiboDownloaderMiddleware': 543
-   #  'weibo_crawler.middlewares.SuspectiveDownloaderMiddleware': 543
-   'weibo_crawler.middlewares.HottestDownloaderMiddleware': 543
 
 }
 
@@ -73,9 +71,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    # 'weibo_crawler.pipelines.WeiboCrawlerPipeline': 300
-   # 'weibo_crawler.pipelines.FakeWeiboPipeline': 300,
-   # 'weibo_crawler.pipelines.GetSuspectPipeline': 300
-   'weibo_crawler.pipelines.HottestWeiboPipeline': 300
+   # 'weibo_crawler.pipelines.FakeWeiboPipeline': 300
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
