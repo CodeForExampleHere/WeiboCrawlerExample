@@ -140,9 +140,6 @@ class WeiboCrawlerDownloaderMiddleware(object):
                     height = self.browser.execute_script(js)
 
             return HtmlResponse(url=self.browser.current_url, body=self.browser.page_source, encoding='utf-8')
-
-
-
         except TimeoutException:
             return HtmlResponse(url=request.url, status=500, request=request)
 

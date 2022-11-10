@@ -2,25 +2,6 @@
 # -*- coding: utf-8 -*-
 
 ALPHABET = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-from selenium.webdriver.common.keys import Keys
-from selenium import webdriver
-import time
-
-def get_weibo_cookies():
-    url = 'https://login.sina.com.cn/signup/signin.php?entry=sso'
-    driver = webdriver.Chrome()
-    driver.get(url)
-    driver.implicitly_wait(10)
-    driver.find_element_by_xpath('//*[@id="username"]').clear()
-    driver.find_element_by_xpath('//*[@id="username"]').send_keys("1156618076@qq.com")
-    driver.find_element_by_xpath('//*[@id="password"]').clear()
-    driver.find_element_by_xpath('//*[@id="password"]').send_keys("zhenwoduzun1741!")
-    driver.find_element_by_xpath('//*[@id="password"]').send_keys(Keys.ENTER)
-    time.sleep(10)
-    driver.get("https://service.account.weibo.com/index?type=5&status=0&page=1")
-    cookies = driver.get_cookies()
-
-    return cookies
 
 def base62_encode(num, alphabet=ALPHABET):
     """Encode a number in Base X

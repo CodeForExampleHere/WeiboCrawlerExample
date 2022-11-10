@@ -14,10 +14,7 @@ BOT_NAME = 'weibo_crawler'
 SPIDER_MODULES = ['weibo_crawler.spiders']
 NEWSPIDER_MODULE = 'weibo_crawler.spiders'
 
-# LOG_LEVEL = 'INFO'
-
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'weibo_crawler (+http://www.yourdomain.com)'
+LOG_LEVEL = 'INFO'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -43,8 +40,8 @@ COOKIES_ENABLED = True
 DEFAULT_REQUEST_HEADERS = {
   # 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
   # 'Accept-Language': 'en',
-   'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36',
-   'Cookie':'login_sid_t=17ef9874b4f651eefef080842f6f3e93; cross_origin_proto=SSL; _s_tentry=passport.weibo.com; Apache=7761125586879.216.1581909478783; SINAGLOBAL=7761125586879.216.1581909478783; ULV=1581909478799:1:1:1:7761125586879.216.1581909478783:; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WhPdj8IaVDw1s9JEgm.EzEL5JpX5K2hUgL.Fo2RSK.pehzceKz2dJLoIpxhB-4i-XyWCXHH-Lilg-8eC281x5tt; SSOLoginState=1581909545; ALF=1613445556; SCF=AsCgLr-M5sL__LLmxsqU2O_6oYxV4CFAttlk8vqB9sl82lericUHgM-bPW68zTL8T_Hkca0qiKWl8cWxro-kXBc.; SUB=_2A25zTnZlDeRhGedG7lsQ8CzKyj6IHXVQOuCtrDV8PUNbmtAfLVmgkW9NUVW4CjRdUdC3uD7NBZiB4s9797K7EHwA; SUHB=0h1YmvzHq2Ras4; un=1156618076@qq.com; wvr=6; webim_unReadCount=%7B%22time%22%3A1581909566684%2C%22dm_pub_total%22%3A0%2C%22chat_group_client%22%3A0%2C%22allcountNum%22%3A1%2C%22msgbox%22%3A0%7D'
+   'User-Agent': 'your_user_agent',
+   'Cookie':'your_cookie'
 }
 
 # Enable or disable spider middlewares

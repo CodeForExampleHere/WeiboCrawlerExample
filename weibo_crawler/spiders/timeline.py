@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from weibo_crawler.items import WeiboCrawlerItem
+from items import WeiboCrawlerItem
 
 
 class TimelineSpider(scrapy.Spider):

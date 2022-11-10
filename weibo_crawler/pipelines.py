@@ -9,7 +9,8 @@ import json
 
 class WeiboCrawlerPipeline(object):
     def __init__(self):
-        self.file = open("society_0308.json", "w", encoding="utf-8")
+        self.filename = "normal_weibo.json"
+        self.file = open(self.filename, "w", encoding="utf-8")
     def process_item(self, item, spider):
         self.file.write(json.dumps(dict(item), ensure_ascii=False, indent=4) + "\n")
         return item
@@ -18,7 +19,8 @@ class WeiboCrawlerPipeline(object):
 
 class FakeWeiboPipeline(object):
     def __init__(self):
-        self.file = open("fake_0323_further.json", "w", encoding="utf-8")
+        self.filename = "rumor_weibo.json"
+        self.file = open(self.filename, "w", encoding="utf-8")
     def process_item(self, item, spider):
         self.file.write(json.dumps(dict(item), ensure_ascii=False, indent=4) + "\n")
         return item
